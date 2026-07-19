@@ -8,7 +8,7 @@ Predicts rice harvest day (days after sowing) from agroclimatic information avai
 
 Harvest day is defined as the first day on which accumulated growing degree days (AGDD) reach the thermal requirement of the reference cultivar (1900 °C-days above a 10 °C base). Each growing season contributes one observation, giving 1,866 sowing events across six districts and seven sowing windows.
 
-**AgroTabXFormer** combines two inputs: tabular predictors known at sowing (district, season, sowing date, soil moisture, temperature, humidity, pre-sowing rainfall) and a 170-day growing-season sequence of daily temperature and GDD. Attention pooling over the sequence allows the model to weight the phenologically relevant portion of the season. The baseline `transformer` model is identical except that it uses mean pooling, isolating the contribution of attention pooling.
+**AgroTabXFormer** combines two inputs: tabular predictors known at sowing (district, season, sowing date, soil moisture, temperature, humidity, pre-sowing rainfall) and a 150-day growing-season sequence of daily temperature and GDD. Attention pooling over the sequence allows the model to weight the phenologically relevant portion of the season. The baseline `transformer` model is identical except that it uses mean pooling, isolating the contribution of attention pooling.
 
 ## Repository structure
 
